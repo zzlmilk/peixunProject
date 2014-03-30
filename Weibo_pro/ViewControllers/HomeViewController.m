@@ -107,7 +107,7 @@
     [updateDic setObject:@"2.00CRgIDC7EG4JE58ef8087bdlMIUVD" forKey:@"access_token"];
     [updateDic setObject:@"text weibo" forKey:@"status"];
     
-    [Status statusUpdateParameters:updateDic WithBlock:^(Status *s){                
+    [Status statusUpdateParameters:updateDic WithBlock:^(Status *s){
         NSLog(@"%@",s.text);
     }];
     
