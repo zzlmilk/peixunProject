@@ -11,9 +11,9 @@
 
 @interface User : NSObject
 
-@property (nonatomic,strong)NSString *name;
-@property (nonatomic,strong)NSString *text;
-@property (nonatomic,strong)NSString *imageName;
+@property(nonatomic) int userId;
+@property (nonatomic,strong)NSString *screenName;
+@property (nonatomic,strong)NSString *imageUrl;
 
 
 -(id)initWithDic:(NSDictionary *)dic;

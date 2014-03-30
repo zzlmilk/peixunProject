@@ -18,9 +18,10 @@ static NSString *const AppBaseUrl = @"https://api.weibo.com";
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken,^{
         _shareClient = [[ApIClient alloc]initWithBaseURL:[NSURL URLWithString:AppBaseUrl]];
-        
         [_shareClient setSecurityPolicy:[AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone]];
     });
+    
+    
     
     
 

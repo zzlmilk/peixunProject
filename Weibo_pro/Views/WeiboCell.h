@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "User.h"
+#import "Status.h"
+
 
 @interface WeiboCell : UITableViewCell
 {
@@ -15,7 +16,7 @@
 }
 
 
-@property (nonatomic,strong)User *user;
+@property (nonatomic,strong)Status *status;
 
 
 @property(nonatomic,strong)  UIImageView *userImageView;

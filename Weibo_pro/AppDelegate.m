@@ -6,6 +6,7 @@
 //  Copyright (c) 2014年 zzlmilk. All rights reserved.
 //
 
+
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "UserViewController.h"
@@ -13,10 +14,15 @@
 
 
 @implementation AppDelegate
+@synthesize window =_window;
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor yellowColor];
     

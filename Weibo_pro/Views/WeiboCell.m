@@ -7,6 +7,7 @@
 //
 
 #import "WeiboCell.h"
+#import "User.h"
 
 // 引用 分类 概念
 
@@ -34,21 +35,10 @@
     return self;
 }
 
--(void)setUser:(User *)user{
-    if (user) {
-        
-    _userNameLabel.text = user.name;
-   // _userImageView.image = [UIImage imageNamed:user.imageName];
-        [_userImageView setImageWithURL:[NSURL URLWithString:user.imageName]];
-        
-       
-        
-    _weiboTextLabel.text = user.text;
-    
-
-    [_weiboTextLabel sizeToFit];
-        
-    }
+-(void)setStatus:(Status *)status{
+    _weiboTextLabel.text = status.text;
+    _userNameLabel.text = status.user.screenName;
+    [_userImageView setImageWithURL:[NSURL URLWithString:status.user.imageUrl]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

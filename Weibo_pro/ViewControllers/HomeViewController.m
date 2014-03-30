@@ -10,6 +10,8 @@
 #import "UserViewController.h"
 #import "WeiboCell.h"
 #import "User.h"
+#import "Status.h"
+#import "MBProgressHUD.h"
 
 
 @interface HomeViewController ()
@@ -32,6 +34,8 @@
 {
     [super viewDidLoad];
     
+//        NSDictionary *dic = [NSDictionary dictionaryWithObject:@"2.00CRgIDC7EG4JE58ef8087bdlMIUVD" forKey:@"access_token"];
+ 
     
 //    userList = [[NSMutableArray alloc]init];
 //    
@@ -63,10 +67,10 @@
     
     tableView.scrollEnabled = YES;
     
-    [User getWeiboWihtBlock:^(NSArray *list) {
-        userList =[NSMutableArray arrayWithArray:list];
-        [tableView reloadData];
-    }];
+//    [User getWeiboWihtBlock:^(NSArray *list) {
+//        userList =[NSMutableArray arrayWithArray:list];
+//        [tableView reloadData];
+//    }];
 
     
     /*
@@ -82,14 +86,38 @@
     NSLog(@"viewDidLoad");
      */
     
+    NSMutableDictionary *dic =[[NSMutableDictionary alloc]init];
+    [dic setObject:@"2.00CRgIDC7EG4JE58ef8087bdlMIUVD" forKey:@"access_token"];
+    [dic setObject:@"21" forKey:@"count"];
+    
+    MBProgressHUD *progressHub = [[MBProgressHUD alloc]init];
+    progressHub.mode = MBProgressHUDModeDeterminate;
+    [progressHub show:YES];
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [Status statusByPublicTimelineParameters:dic WithBlock:^(NSMutableArray *statusArray) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        list = statusArray;
+        [tableView reloadData];
+    }];
     
     
+    // 发微博
+    NSMutableDictionary *updateDic =[[NSMutableDictionary alloc]init];
+    [updateDic setObject:@"2.00CRgIDC7EG4JE58ef8087bdlMIUVD" forKey:@"access_token"];
+    [updateDic setObject:@"text weibo" forKey:@"status"];
+    
+    [Status statusUpdateParameters:updateDic WithBlock:^(Status *s){                
+        NSLog(@"%@",s.text);
+    }];
+    
+
 }
 
 
 #pragma mark --- UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return userList.count;
+    return list.count;
 }
 
 
@@ -113,8 +141,9 @@
         cell = [[WeiboCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
     
+    Status * s = [list objectAtIndex:indexPath.row];
     
-    cell.user = [userList objectAtIndex:indexPath.row];
+    cell.status = s;
     
     return cell;
     

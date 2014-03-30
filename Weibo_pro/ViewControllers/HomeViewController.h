@@ -13,7 +13,7 @@
 {
     //UINavigationController *navVC;
 
-    NSMutableArray *userList;
+    NSMutableArray *list;
     
 }
 
