@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0453376118DED5E7000305FA /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453373F18DED5E7000305FA /* AFHTTPRequestOperation.m */; };
+		0453376218DED5E7000305FA /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453374118DED5E7000305FA /* AFHTTPRequestOperationManager.m */; };
+		0453376318DED5E7000305FA /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453374318DED5E7000305FA /* AFHTTPSessionManager.m */; };
+		0453376418DED5E7000305FA /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453374618DED5E7000305FA /* AFNetworkReachabilityManager.m */; };
+		0453376518DED5E7000305FA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453374818DED5E7000305FA /* AFSecurityPolicy.m */; };
+		0453376618DED5E7000305FA /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453374A18DED5E7000305FA /* AFURLConnectionOperation.m */; };
+		0453376718DED5E7000305FA /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453374C18DED5E7000305FA /* AFURLRequestSerialization.m */; };
+		0453376818DED5E7000305FA /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453374E18DED5E7000305FA /* AFURLResponseSerialization.m */; };
+		0453376918DED5E7000305FA /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453375018DED5E7000305FA /* AFURLSessionManager.m */; };
+		0453376A18DED5E7000305FA /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453375318DED5E7000305FA /* AFNetworkActivityIndicatorManager.m */; };
+		0453376B18DED5E7000305FA /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453375518DED5E7000305FA /* UIActivityIndicatorView+AFNetworking.m */; };
+		0453376C18DED5E7000305FA /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453375718DED5E7000305FA /* UIAlertView+AFNetworking.m */; };
+		0453376D18DED5E7000305FA /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453375918DED5E7000305FA /* UIButton+AFNetworking.m */; };
+		0453376E18DED5E7000305FA /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453375B18DED5E7000305FA /* UIImageView+AFNetworking.m */; };
+		0453376F18DED5E7000305FA /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453375E18DED5E7000305FA /* UIProgressView+AFNetworking.m */; };
+		0453377018DED5E7000305FA /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453376018DED5E7000305FA /* UIWebView+AFNetworking.m */; };
+		0453377318DED6E1000305FA /* ApIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453377218DED6E1000305FA /* ApIClient.m */; };
+		0453377618DEE237000305FA /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453377518DEE237000305FA /* Status.m */; };
+		045386A918DEA7D80007C108 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045386A818DEA7D80007C108 /* Foundation.framework */; };
+		045386AB18DEA7D80007C108 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045386AA18DEA7D80007C108 /* CoreGraphics.framework */; };
+		045386AD18DEA7D80007C108 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045386AC18DEA7D80007C108 /* UIKit.framework */; };
+		045386B318DEA7D80007C108 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 045386B118DEA7D80007C108 /* InfoPlist.strings */; };
+		045386B518DEA7D80007C108 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045386B418DEA7D80007C108 /* main.m */; };
+		045386B918DEA7D80007C108 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045386B818DEA7D80007C108 /* AppDelegate.m */; };
+		045386BB18DEA7D80007C108 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045386BA18DEA7D80007C108 /* Images.xcassets */; };
+		045386C218DEA7D80007C108 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045386C118DEA7D80007C108 /* XCTest.framework */; };
+		045386C318DEA7D80007C108 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045386A818DEA7D80007C108 /* Foundation.framework */; };
+		045386C418DEA7D80007C108 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045386AC18DEA7D80007C108 /* UIKit.framework */; };
+		045386CC18DEA7D80007C108 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 045386CA18DEA7D80007C108 /* InfoPlist.strings */; };
+		045386CE18DEA7D80007C108 /* Weibo_proTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045386CD18DEA7D80007C108 /* Weibo_proTests.m */; };
+		045386DC18DEAB250007C108 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045386DB18DEAB250007C108 /* HomeViewController.m */; };
+		045386DF18DEADD70007C108 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 045386DE18DEADD70007C108 /* User.m */; };
+		045386E218DEAFD00007C108 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045386E118DEAFD00007C108 /* UserViewController.m */; };
+		045386E518DEB6200007C108 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045386E418DEB6200007C108 /* SetViewController.m */; };
+		045386EA18DEC51B0007C108 /* WeiboCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045386E918DEC51B0007C108 /* WeiboCell.m */; };
+		045386ED18DEC9BA0007C108 /* 0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 045386EC18DEC9BA0007C108 /* 0.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		045386C518DEA7D80007C108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0453869D18DEA7D80007C108 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045386A418DEA7D80007C108;
+			remoteInfo = Weibo_pro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0453373E18DED5E7000305FA /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		0453373F18DED5E7000305FA /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		0453374018DED5E7000305FA /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		0453374118DED5E7000305FA /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		0453374218DED5E7000305FA /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		0453374318DED5E7000305FA /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		0453374418DED5E7000305FA /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		0453374518DED5E7000305FA /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		0453374618DED5E7000305FA /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		0453374718DED5E7000305FA /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		0453374818DED5E7000305FA /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		0453374918DED5E7000305FA /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		0453374A18DED5E7000305FA /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		0453374B18DED5E7000305FA /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		0453374C18DED5E7000305FA /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		0453374D18DED5E7000305FA /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		0453374E18DED5E7000305FA /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		0453374F18DED5E7000305FA /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		0453375018DED5E7000305FA /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		0453375218DED5E7000305FA /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		0453375318DED5E7000305FA /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		0453375418DED5E7000305FA /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		0453375518DED5E7000305FA /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		0453375618DED5E7000305FA /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		0453375718DED5E7000305FA /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		0453375818DED5E7000305FA /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		0453375918DED5E7000305FA /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		0453375A18DED5E7000305FA /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		0453375B18DED5E7000305FA /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		0453375C18DED5E7000305FA /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		0453375D18DED5E7000305FA /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		0453375E18DED5E7000305FA /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		0453375F18DED5E7000305FA /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		0453376018DED5E7000305FA /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		0453377118DED6E1000305FA /* ApIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApIClient.h; sourceTree = "<group>"; };
+		0453377218DED6E1000305FA /* ApIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApIClient.m; sourceTree = "<group>"; };
+		0453377418DEE237000305FA /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		0453377518DEE237000305FA /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
+		045386A518DEA7D80007C108 /* Weibo_pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo_pro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045386A818DEA7D80007C108 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		045386AA18DEA7D80007C108 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		045386AC18DEA7D80007C108 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		045386B018DEA7D80007C108 /* Weibo_pro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Weibo_pro-Info.plist"; sourceTree = "<group>"; };
+		045386B218DEA7D80007C108 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		045386B418DEA7D80007C108 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		045386B618DEA7D80007C108 /* Weibo_pro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weibo_pro-Prefix.pch"; sourceTree = "<group>"; };
+		045386B718DEA7D80007C108 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		045386B818DEA7D80007C108 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		045386BA18DEA7D80007C108 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		045386C018DEA7D80007C108 /* Weibo_proTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Weibo_proTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045386C118DEA7D80007C108 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		045386C918DEA7D80007C108 /* Weibo_proTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Weibo_proTests-Info.plist"; sourceTree = "<group>"; };
+		045386CB18DEA7D80007C108 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		045386CD18DEA7D80007C108 /* Weibo_proTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weibo_proTests.m; sourceTree = "<group>"; };
+		045386DA18DEAB250007C108 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		045386DB18DEAB250007C108 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		045386DD18DEADD70007C108 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		045386DE18DEADD70007C108 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		045386E018DEAFD00007C108 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		045386E118DEAFD00007C108 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		045386E318DEB6200007C108 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		045386E418DEB6200007C108 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		045386E818DEC51B0007C108 /* WeiboCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboCell.h; sourceTree = "<group>"; };
+		045386E918DEC51B0007C108 /* WeiboCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboCell.m; sourceTree = "<group>"; };
+		045386EC18DEC9BA0007C108 /* 0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpeg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045386A218DEA7D80007C108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045386AB18DEA7D80007C108 /* CoreGraphics.framework in Frameworks */,
+				045386AD18DEA7D80007C108 /* UIKit.framework in Frameworks */,
+				045386A918DEA7D80007C108 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045386BD18DEA7D80007C108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045386C218DEA7D80007C108 /* XCTest.framework in Frameworks */,
+				045386C418DEA7D80007C108 /* UIKit.framework in Frameworks */,
+				045386C318DEA7D80007C108 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0453373D18DED5E7000305FA /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				0453373E18DED5E7000305FA /* AFHTTPRequestOperation.h */,
+				0453373F18DED5E7000305FA /* AFHTTPRequestOperation.m */,
+				0453374018DED5E7000305FA /* AFHTTPRequestOperationManager.h */,
+				0453374118DED5E7000305FA /* AFHTTPRequestOperationManager.m */,
+				0453374218DED5E7000305FA /* AFHTTPSessionManager.h */,
+				0453374318DED5E7000305FA /* AFHTTPSessionManager.m */,
+				0453374418DED5E7000305FA /* AFNetworking.h */,
+				0453374518DED5E7000305FA /* AFNetworkReachabilityManager.h */,
+				0453374618DED5E7000305FA /* AFNetworkReachabilityManager.m */,
+				0453374718DED5E7000305FA /* AFSecurityPolicy.h */,
+				0453374818DED5E7000305FA /* AFSecurityPolicy.m */,
+				0453374918DED5E7000305FA /* AFURLConnectionOperation.h */,
+				0453374A18DED5E7000305FA /* AFURLConnectionOperation.m */,
+				0453374B18DED5E7000305FA /* AFURLRequestSerialization.h */,
+				0453374C18DED5E7000305FA /* AFURLRequestSerialization.m */,
+				0453374D18DED5E7000305FA /* AFURLResponseSerialization.h */,
+				0453374E18DED5E7000305FA /* AFURLResponseSerialization.m */,
+				0453374F18DED5E7000305FA /* AFURLSessionManager.h */,
+				0453375018DED5E7000305FA /* AFURLSessionManager.m */,
+				0453375118DED5E7000305FA /* UIKit+AFNetworking */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		0453375118DED5E7000305FA /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				0453375218DED5E7000305FA /* AFNetworkActivityIndicatorManager.h */,
+				0453375318DED5E7000305FA /* AFNetworkActivityIndicatorManager.m */,
+				0453375418DED5E7000305FA /* UIActivityIndicatorView+AFNetworking.h */,
+				0453375518DED5E7000305FA /* UIActivityIndicatorView+AFNetworking.m */,
+				0453375618DED5E7000305FA /* UIAlertView+AFNetworking.h */,
+				0453375718DED5E7000305FA /* UIAlertView+AFNetworking.m */,
+				0453375818DED5E7000305FA /* UIButton+AFNetworking.h */,
+				0453375918DED5E7000305FA /* UIButton+AFNetworking.m */,
+				0453375A18DED5E7000305FA /* UIImageView+AFNetworking.h */,
+				0453375B18DED5E7000305FA /* UIImageView+AFNetworking.m */,
+				0453375C18DED5E7000305FA /* UIKit+AFNetworking.h */,
+				0453375D18DED5E7000305FA /* UIProgressView+AFNetworking.h */,
+				0453375E18DED5E7000305FA /* UIProgressView+AFNetworking.m */,
+				0453375F18DED5E7000305FA /* UIWebView+AFNetworking.h */,
+				0453376018DED5E7000305FA /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		0453869C18DEA7D80007C108 = {
+			isa = PBXGroup;
+			children = (
+				045386AE18DEA7D80007C108 /* Weibo_pro */,
+				045386C718DEA7D80007C108 /* Weibo_proTests */,
+				045386A718DEA7D80007C108 /* Frameworks */,
+				045386A618DEA7D80007C108 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		045386A618DEA7D80007C108 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045386A518DEA7D80007C108 /* Weibo_pro.app */,
+				045386C018DEA7D80007C108 /* Weibo_proTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045386A718DEA7D80007C108 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				045386A818DEA7D80007C108 /* Foundation.framework */,
+				045386AA18DEA7D80007C108 /* CoreGraphics.framework */,
+				045386AC18DEA7D80007C108 /* UIKit.framework */,
+				045386C118DEA7D80007C108 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		045386AE18DEA7D80007C108 /* Weibo_pro */ = {
+			isa = PBXGroup;
+			children = (
+				0453373D18DED5E7000305FA /* AFNetworking */,
+				045386EB18DEC9960007C108 /* Images */,
+				045386D918DEAA180007C108 /* Views */,
+				045386D818DEAA090007C108 /* ViewControllers */,
+				045386D718DEA9F90007C108 /* Moldes */,
+				045386B718DEA7D80007C108 /* AppDelegate.h */,
+				045386B818DEA7D80007C108 /* AppDelegate.m */,
+				045386BA18DEA7D80007C108 /* Images.xcassets */,
+				045386AF18DEA7D80007C108 /* Supporting Files */,
+			);
+			path = Weibo_pro;
+			sourceTree = "<group>";
+		};
+		045386AF18DEA7D80007C108 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				045386B018DEA7D80007C108 /* Weibo_pro-Info.plist */,
+				045386B118DEA7D80007C108 /* InfoPlist.strings */,
+				045386B418DEA7D80007C108 /* main.m */,
+				045386B618DEA7D80007C108 /* Weibo_pro-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		045386C718DEA7D80007C108 /* Weibo_proTests */ = {
+			isa = PBXGroup;
+			children = (
+				045386CD18DEA7D80007C108 /* Weibo_proTests.m */,
+				045386C818DEA7D80007C108 /* Supporting Files */,
+			);
+			path = Weibo_proTests;
+			sourceTree = "<group>";
+		};
+		045386C818DEA7D80007C108 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				045386C918DEA7D80007C108 /* Weibo_proTests-Info.plist */,
+				045386CA18DEA7D80007C108 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		045386D718DEA9F90007C108 /* Moldes */ = {
+			isa = PBXGroup;
+			children = (
+				045386DD18DEADD70007C108 /* User.h */,
+				045386DE18DEADD70007C108 /* User.m */,
+				0453377118DED6E1000305FA /* ApIClient.h */,
+				0453377218DED6E1000305FA /* ApIClient.m */,
+				0453377418DEE237000305FA /* Status.h */,
+				0453377518DEE237000305FA /* Status.m */,
+			);
+			path = Moldes;
+			sourceTree = "<group>";
+		};
+		045386D818DEAA090007C108 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				045386DA18DEAB250007C108 /* HomeViewController.h */,
+				045386DB18DEAB250007C108 /* HomeViewController.m */,
+				045386E018DEAFD00007C108 /* UserViewController.h */,
+				045386E118DEAFD00007C108 /* UserViewController.m */,
+				045386E318DEB6200007C108 /* SetViewController.h */,
+				045386E418DEB6200007C108 /* SetViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		045386D918DEAA180007C108 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				045386E818DEC51B0007C108 /* WeiboCell.h */,
+				045386E918DEC51B0007C108 /* WeiboCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		045386EB18DEC9960007C108 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				045386EC18DEC9BA0007C108 /* 0.jpeg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045386A418DEA7D80007C108 /* Weibo_pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045386D118DEA7D80007C108 /* Build configuration list for PBXNativeTarget "Weibo_pro" */;
+			buildPhases = (
+				045386A118DEA7D80007C108 /* Sources */,
+				045386A218DEA7D80007C108 /* Frameworks */,
+				045386A318DEA7D80007C108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Weibo_pro;
+			productName = Weibo_pro;
+			productReference = 045386A518DEA7D80007C108 /* Weibo_pro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		045386BF18DEA7D80007C108 /* Weibo_proTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045386D418DEA7D80007C108 /* Build configuration list for PBXNativeTarget "Weibo_proTests" */;
+			buildPhases = (
+				045386BC18DEA7D80007C108 /* Sources */,
+				045386BD18DEA7D80007C108 /* Frameworks */,
+				045386BE18DEA7D80007C108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045386C618DEA7D80007C108 /* PBXTargetDependency */,
+			);
+			name = Weibo_proTests;
+			productName = Weibo_proTests;
+			productReference = 045386C018DEA7D80007C108 /* Weibo_proTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0453869D18DEA7D80007C108 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = zzlmilk;
+				TargetAttributes = {
+					045386BF18DEA7D80007C108 = {
+						TestTargetID = 045386A418DEA7D80007C108;
+					};
+				};
+			};
+			buildConfigurationList = 045386A018DEA7D80007C108 /* Build configuration list for PBXProject "Weibo_pro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0453869C18DEA7D80007C108;
+			productRefGroup = 045386A618DEA7D80007C108 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045386A418DEA7D80007C108 /* Weibo_pro */,
+				045386BF18DEA7D80007C108 /* Weibo_proTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045386A318DEA7D80007C108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045386ED18DEC9BA0007C108 /* 0.jpeg in Resources */,
+				045386B318DEA7D80007C108 /* InfoPlist.strings in Resources */,
+				045386BB18DEA7D80007C108 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045386BE18DEA7D80007C108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045386CC18DEA7D80007C108 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045386A118DEA7D80007C108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0453376618DED5E7000305FA /* AFURLConnectionOperation.m in Sources */,
+				045386DF18DEADD70007C108 /* User.m in Sources */,
+				0453376F18DED5E7000305FA /* UIProgressView+AFNetworking.m in Sources */,
+				045386E218DEAFD00007C108 /* UserViewController.m in Sources */,
+				0453376C18DED5E7000305FA /* UIAlertView+AFNetworking.m in Sources */,
+				045386B918DEA7D80007C108 /* AppDelegate.m in Sources */,
+				0453376818DED5E7000305FA /* AFURLResponseSerialization.m in Sources */,
+				0453376D18DED5E7000305FA /* UIButton+AFNetworking.m in Sources */,
+				045386B518DEA7D80007C108 /* main.m in Sources */,
+				0453376B18DED5E7000305FA /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				0453376718DED5E7000305FA /* AFURLRequestSerialization.m in Sources */,
+				0453376A18DED5E7000305FA /* AFNetworkActivityIndicatorManager.m in Sources */,
+				0453376518DED5E7000305FA /* AFSecurityPolicy.m in Sources */,
+				0453376118DED5E7000305FA /* AFHTTPRequestOperation.m in Sources */,
+				0453376918DED5E7000305FA /* AFURLSessionManager.m in Sources */,
+				0453377318DED6E1000305FA /* ApIClient.m in Sources */,
+				045386DC18DEAB250007C108 /* HomeViewController.m in Sources */,
+				0453377018DED5E7000305FA /* UIWebView+AFNetworking.m in Sources */,
+				0453377618DEE237000305FA /* Status.m in Sources */,
+				045386E518DEB6200007C108 /* SetViewController.m in Sources */,
+				0453376318DED5E7000305FA /* AFHTTPSessionManager.m in Sources */,
+				045386EA18DEC51B0007C108 /* WeiboCell.m in Sources */,
+				0453376418DED5E7000305FA /* AFNetworkReachabilityManager.m in Sources */,
+				0453376E18DED5E7000305FA /* UIImageView+AFNetworking.m in Sources */,
+				0453376218DED5E7000305FA /* AFHTTPRequestOperationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045386BC18DEA7D80007C108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045386CE18DEA7D80007C108 /* Weibo_proTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045386C618DEA7D80007C108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 045386A418DEA7D80007C108 /* Weibo_pro */;
+			targetProxy = 045386C518DEA7D80007C108 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		045386B118DEA7D80007C108 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045386B218DEA7D80007C108 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		045386CA18DEA7D80007C108 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045386CB18DEA7D80007C108 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045386CF18DEA7D80007C108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		045386D018DEA7D80007C108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045386D218DEA7D80007C108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weibo_pro/Weibo_pro-Prefix.pch";
+				INFOPLIST_FILE = "Weibo_pro/Weibo_pro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		045386D318DEA7D80007C108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weibo_pro/Weibo_pro-Prefix.pch";
+				INFOPLIST_FILE = "Weibo_pro/Weibo_pro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		045386D518DEA7D80007C108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Weibo_pro.app/Weibo_pro";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weibo_pro/Weibo_pro-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Weibo_proTests/Weibo_proTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		045386D618DEA7D80007C108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Weibo_pro.app/Weibo_pro";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weibo_pro/Weibo_pro-Prefix.pch";
+				INFOPLIST_FILE = "Weibo_proTests/Weibo_proTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045386A018DEA7D80007C108 /* Build configuration list for PBXProject "Weibo_pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045386CF18DEA7D80007C108 /* Debug */,
+				045386D018DEA7D80007C108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045386D118DEA7D80007C108 /* Build configuration list for PBXNativeTarget "Weibo_pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045386D218DEA7D80007C108 /* Debug */,
+				045386D318DEA7D80007C108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045386D418DEA7D80007C108 /* Build configuration list for PBXNativeTarget "Weibo_proTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045386D518DEA7D80007C108 /* Debug */,
+				045386D618DEA7D80007C108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0453869D18DEA7D80007C108 /* Project object */;
+}
