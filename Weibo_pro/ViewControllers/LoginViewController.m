@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "UserViewController.h"
+#import "Config.h"
+
 
 @interface LoginViewController ()<UITextFieldDelegate>
 {
@@ -30,6 +32,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
 	// Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor brownColor];
      nameTextFiled = [[UITextField alloc]initWithFrame:CGRectMake(60, 40, 200, 44)];
@@ -37,21 +42,22 @@
     //nameTextFiled.backgroundColor = [UIColor blackColor];
     nameTextFiled.borderStyle = UITextBorderStyleRoundedRect;
     [self.view addSubview:nameTextFiled];
+    [nameTextFiled becomeFirstResponder];
     
      passwordTextFiled = [[UITextField alloc]initWithFrame:CGRectMake(60, 104, 200, 44)];
     passwordTextFiled.borderStyle = UITextBorderStyleRoundedRect;
     passwordTextFiled.secureTextEntry  = YES;
     [self.view addSubview:passwordTextFiled];
     
-    UIButton *loginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [loginButton setTitle:@"登陆" forState:UIControlStateNormal];
-    loginButton.frame = CGRectMake(60, 168, 200, 44);
+    UIButton *loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    //[loginButton setTitle:@"登陆" forState:UIControlStateNormal];
+    loginButton.frame = CGRectMake(120, 168, 113.0/2, 113.0/2);
+    //loginButton.imageView.image = [UIImage imageNamed:@"yiGeRen"];
+    [loginButton setImage:[UIImage imageNamed:@"yiGeRen"] forState:UIControlStateNormal];
     [loginButton addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
     
+    
     [self.view addSubview:loginButton];
-    
-    
-    
     
     
 }
@@ -68,8 +74,12 @@
     
     
     //假设服务器认证用户成功
-    BOOL restult =  NO;
+    BOOL restult =  YES;
     if (restult) {
+        [[NSUserDefaults standardUserDefaults] setObject:nameTextFiled.text forKey:KNAME];
+        [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"is_login"];
+        
+                
         UserViewController *userVC = [[UserViewController alloc]init];
         [self presentViewController:userVC animated:YES completion:^{
             

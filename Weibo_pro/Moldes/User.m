@@ -43,4 +43,23 @@
     }];
 }
 
++(NSURLSessionDataTask *)getUserWihtBlock:(void (^)(User * u))block{
+    NSMutableDictionary *dic =[[NSMutableDictionary alloc]init];
+    [dic setObject:@"2.00CRgIDC7EG4JE58ef8087bdlMIUVD" forKey:@"access_token"];
+    [dic setObject:@"3923955369" forKey:@"uid"];
+    
+    
+    return [[ApIClient shareClient]GET:@"/2/users/show.json" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+        
+        NSLog(@"%@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@",error);
+    }];
+    
+    
+
+}
+
 @end

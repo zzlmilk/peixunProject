@@ -48,6 +48,7 @@
 		04EC540718FA1FFE00ABBE74 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC540618FA1FFE00ABBE74 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04EC540A18FA425700ABBE74 /* HomeViewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC540918FA425700ABBE74 /* HomeViewDetailViewController.m */; };
 		04EC540D18FA54F700ABBE74 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC540C18FA54F700ABBE74 /* LoginViewController.m */; };
+		04EC540F18FA623100ABBE74 /* yiGeRen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04EC540E18FA623100ABBE74 /* yiGeRen@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,8 @@
 		04EC540918FA425700ABBE74 /* HomeViewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewDetailViewController.m; sourceTree = "<group>"; };
 		04EC540B18FA54F700ABBE74 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		04EC540C18FA54F700ABBE74 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		04EC540E18FA623100ABBE74 /* yiGeRen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yiGeRen@2x.png"; sourceTree = "<group>"; };
+		04EC541118FA675D00ABBE74 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +217,7 @@
 		0453869C18DEA7D80007C108 = {
 			isa = PBXGroup;
 			children = (
+				04EC541118FA675D00ABBE74 /* Config.h */,
 				045386AE18DEA7D80007C108 /* Weibo_pro */,
 				045386C718DEA7D80007C108 /* Weibo_proTests */,
 				045386A718DEA7D80007C108 /* Frameworks */,
@@ -333,6 +337,7 @@
 		045386EB18DEC9960007C108 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				04EC540E18FA623100ABBE74 /* yiGeRen@2x.png */,
 				045386EC18DEC9BA0007C108 /* 0.jpeg */,
 			);
 			path = Images;
@@ -424,6 +429,7 @@
 			files = (
 				045386ED18DEC9BA0007C108 /* 0.jpeg in Resources */,
 				045386B318DEA7D80007C108 /* InfoPlist.strings in Resources */,
+				04EC540F18FA623100ABBE74 /* yiGeRen@2x.png in Resources */,
 				045386BB18DEA7D80007C108 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

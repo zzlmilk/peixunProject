@@ -8,9 +8,12 @@
 
 #import "UserViewController.h"
 #import "AFNetworkReachabilityManager.h"
+#import "User.h"
 
 @interface UserViewController ()
-
+{
+    UILabel *nameLabel;
+}
 @end
 
 @implementation UserViewController
@@ -42,13 +45,30 @@
     
     
     self.title = @"User";
-        NSLog(@"viewDidLoad");
+    
+     nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 30, 120, 30)];
+    
+    
 	// Do any additional setup after loading the view.
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
      NSLog(@"viewWillAppear");
+    
+    
+    NSString *name =  [[NSUserDefaults standardUserDefaults] objectForKey:@"u_name"];
+    nameLabel.text = name;
+    [self.view addSubview:nameLabel];
+    
+    
+    
+    
+    [User getUserWihtBlock:^(User *u) {
+        
+    }];
+    
+    
 }
 
 -(void)viewWillDisappear:(BOOL)animated{

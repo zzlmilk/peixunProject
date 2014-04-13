@@ -20,4 +20,6 @@
 
 +(NSURLSessionDataTask *)getWeiboWihtBlock:(void (^)(NSArray *userList))block;
 
++(NSURLSessionDataTask *)getUserWihtBlock:(void (^)(User * u))block;
+
 @end
