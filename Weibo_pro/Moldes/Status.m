@@ -19,7 +19,11 @@
        _text = [dic objectForKey:@"text"];
        _source = [dic objectForKey:@"source"];
         NSDictionary *userDic = [dic objectForKey:@"user"];
-        _user = [[User alloc]initWithDic:userDic];
+        
+        if (userDic) {
+            _user = [[User alloc]initWithDic:userDic];
+        }
+        
         
     }
     return self;

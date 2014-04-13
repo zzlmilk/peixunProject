@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface UserViewController : UIViewController<UIScrollViewDelegate>
-
+{
+    UIImageView *userImageView;
+    UILabel *userLabel ;
+    UILabel *descriptionLabel;
+    UILabel *gender;
+    
+    UILabel *textLabel;
+}
 @end

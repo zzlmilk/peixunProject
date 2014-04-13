@@ -8,12 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "ApIClient.h"
+#import "Status.h"
 
 @interface User : NSObject
 
 @property(nonatomic) int userId;
 @property (nonatomic,strong)NSString *screenName;
 @property (nonatomic,strong)NSString *imageUrl;
+@property(nonatomic,strong)NSString *description;
+@property(nonatomic,strong)NSString *gender;
+@property(nonatomic,strong)Status *status;
+
+
 
 
 -(id)initWithDic:(NSDictionary *)dic;

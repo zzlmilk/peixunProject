@@ -16,6 +16,14 @@
         _userId = [[dic objectForKey:@"id"] intValue];
         _screenName = [dic objectForKey:@"screen_name"];
         _imageUrl  = [dic objectForKey:@"profile_image_url"];
+        _description = [dic objectForKey:@"description"];
+        _gender = [dic objectForKey:@"gender"];
+        
+        NSDictionary *statusDic = [dic objectForKey:@"status"];
+        Status * s  = [[Status alloc]initWithDic:statusDic];
+        _status = s;
+        
+        
     }
     return self;
 }
@@ -49,11 +57,11 @@
     [dic setObject:@"3923955369" forKey:@"uid"];
     
     
+    
     return [[ApIClient shareClient]GET:@"/2/users/show.json" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
         
-        
-        NSLog(@"%@",responseObject);
-        
+        User * u = [[User alloc]initWithDic:responseObject];
+        block(u);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error);
     }];

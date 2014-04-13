@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "UserViewController.h"
 #import "Config.h"
+#import "HomeViewController.h"
 
 
 @interface LoginViewController ()<UITextFieldDelegate>
@@ -33,6 +34,8 @@
 {
     [super viewDidLoad];
     
+    
+    HomeViewController *homeVC = [[HomeViewController alloc]init];
     
     
 	// Do any additional setup after loading the view.

@@ -47,6 +47,12 @@
     self.title = @"User";
     
      nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 30, 120, 30)];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    userImageView  =[[UIImageView alloc]initWithFrame:CGRectMake(30, 30, 88, 88)];
+    [self.view addSubview:userImageView];
+    
+    
     
     
 	// Do any additional setup after loading the view.
