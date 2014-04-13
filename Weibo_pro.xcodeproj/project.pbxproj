@@ -46,6 +46,8 @@
 		04B31FFD18E8041100562F30 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B31FFC18E8041100562F30 /* Person.m */; };
 		04EC540318FA1A4300ABBE74 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC540218FA1A4300ABBE74 /* MBProgressHUD.m */; };
 		04EC540718FA1FFE00ABBE74 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC540618FA1FFE00ABBE74 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		04EC540A18FA425700ABBE74 /* HomeViewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC540918FA425700ABBE74 /* HomeViewDetailViewController.m */; };
+		04EC540D18FA54F700ABBE74 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC540C18FA54F700ABBE74 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +132,10 @@
 		04EC540218FA1A4300ABBE74 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
 		04EC540518FA1FFE00ABBE74 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		04EC540618FA1FFE00ABBE74 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		04EC540818FA425700ABBE74 /* HomeViewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewDetailViewController.h; sourceTree = "<group>"; };
+		04EC540918FA425700ABBE74 /* HomeViewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewDetailViewController.m; sourceTree = "<group>"; };
+		04EC540B18FA54F700ABBE74 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		04EC540C18FA54F700ABBE74 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +313,10 @@
 				045386E118DEAFD00007C108 /* UserViewController.m */,
 				045386E318DEB6200007C108 /* SetViewController.h */,
 				045386E418DEB6200007C108 /* SetViewController.m */,
+				04EC540818FA425700ABBE74 /* HomeViewDetailViewController.h */,
+				04EC540918FA425700ABBE74 /* HomeViewDetailViewController.m */,
+				04EC540B18FA54F700ABBE74 /* LoginViewController.h */,
+				04EC540C18FA54F700ABBE74 /* LoginViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -447,6 +457,7 @@
 				0453376718DED5E7000305FA /* AFURLRequestSerialization.m in Sources */,
 				04EC540718FA1FFE00ABBE74 /* EGORefreshTableHeaderView.m in Sources */,
 				0453376A18DED5E7000305FA /* AFNetworkActivityIndicatorManager.m in Sources */,
+				04EC540D18FA54F700ABBE74 /* LoginViewController.m in Sources */,
 				04EC540318FA1A4300ABBE74 /* MBProgressHUD.m in Sources */,
 				0453376518DED5E7000305FA /* AFSecurityPolicy.m in Sources */,
 				0453376118DED5E7000305FA /* AFHTTPRequestOperation.m in Sources */,
@@ -461,6 +472,7 @@
 				0453376418DED5E7000305FA /* AFNetworkReachabilityManager.m in Sources */,
 				0453376E18DED5E7000305FA /* UIImageView+AFNetworking.m in Sources */,
 				0453376218DED5E7000305FA /* AFHTTPRequestOperationManager.m in Sources */,
+				04EC540A18FA425700ABBE74 /* HomeViewDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

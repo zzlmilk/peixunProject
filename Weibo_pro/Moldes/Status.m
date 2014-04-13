@@ -45,6 +45,7 @@
         }
         
         
+        
         NSLog(@"%@",statusList);
         block(statusList);
         

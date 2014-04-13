@@ -7,6 +7,7 @@
 //
 
 #import "UserViewController.h"
+#import "AFNetworkReachabilityManager.h"
 
 @interface UserViewController ()
 
@@ -28,6 +29,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //判断网络状态
+    BOOL f =  [AFNetworkReachabilityManager sharedManager].reachableViaWiFi;
+   //BOOL f =  [AFNetworkReachabilityManager sharedManager].reachableViaWiFi;
+    if (f) {
+        NSLog(@"wifi");
+    }
+    else{
+        NSLog(@"no wifi");
+    }
+    
+    
+    
     self.title = @"User";
         NSLog(@"viewDidLoad");
 	// Do any additional setup after loading the view.

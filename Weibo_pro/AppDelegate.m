@@ -11,6 +11,7 @@
 #import "HomeViewController.h"
 #import "UserViewController.h"
 #import "SetViewController.h"
+#import "LoginViewController.h"
 
 
 @implementation AppDelegate
@@ -31,12 +32,13 @@
     UINavigationController *navController =[[UINavigationController alloc]initWithRootViewController:homeViewController];
     
     
-    UserViewController *userViewController =[[UserViewController alloc]init];
+//    UserViewController *userViewController =[[UserViewController alloc]init];
+    LoginViewController *loginVC = [[LoginViewController alloc]init];
     SetViewController *setViewController = [[SetViewController alloc]init];
     
     
     UITabBarController *tabBarController =[[UITabBarController alloc]init];
-    tabBarController.viewControllers = [NSArray arrayWithObjects:navController,userViewController,setViewController, nil];
+    tabBarController.viewControllers = [NSArray arrayWithObjects:navController,loginVC,setViewController, nil];
     
     
     

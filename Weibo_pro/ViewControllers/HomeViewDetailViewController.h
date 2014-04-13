@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Status.h"
 
 @interface HomeViewDetailViewController : UIViewController
+
+
+@property (nonatomic,strong)Status * status;
 
 @end

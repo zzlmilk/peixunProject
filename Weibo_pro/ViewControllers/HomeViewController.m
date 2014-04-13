@@ -14,7 +14,7 @@
 #import "MBProgressHUD.h"
 
 #import "EGORefreshTableHeaderView.h"
-
+#import "HomeViewDetailViewController.h"
 
 
 
@@ -111,9 +111,11 @@
     [dic setObject:@"2.00CRgIDC7EG4JE58ef8087bdlMIUVD" forKey:@"access_token"];
     [dic setObject:@"21" forKey:@"count"];
 
+    
     MBProgressHUD *progressHub = [[MBProgressHUD alloc]init];
     progressHub.mode = MBProgressHUDModeDeterminate;
     [progressHub show:YES];
+    
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [Status statusByPublicTimelineParameters:dic WithBlock:^(NSMutableArray *statusArray) {
@@ -132,6 +134,7 @@
 }
 
 
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
    Status * s = [list objectAtIndex:indexPath.row];
    return [WeiboCell cellHeight:s] +44 ;
@@ -144,6 +147,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    
+    
     static NSString *cellId = @"myCellId";
     WeiboCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId"];
     if (cell == nil) {
@@ -176,12 +181,16 @@
 #pragma mark ---- UITableViewDelegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"%d",indexPath.row);
+    HomeViewDetailViewController *detailVC = [[HomeViewDetailViewController alloc]init];
+    Status * s = [list objectAtIndex:indexPath.row];
+    detailVC.status = s;
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 #pragma mark - UIScrllViewDelegate Methods
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
   
-    [view egoRefreshScrollViewDidScroll:scrollView];
+  //  [view egoRefreshScrollViewDidScroll:scrollView];
 }
 
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
