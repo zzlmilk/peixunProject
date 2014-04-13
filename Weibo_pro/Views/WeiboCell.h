@@ -23,6 +23,6 @@
 @property(nonatomic,strong)  UILabel *userNameLabel;
 @property(nonatomic,strong)  UILabel *weiboTextLabel;
 
-
++(CGFloat)cellHeight:(Status *)status;
 
 @end

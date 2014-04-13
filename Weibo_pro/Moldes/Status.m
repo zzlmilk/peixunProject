@@ -29,6 +29,8 @@
 +(void )statusByPublicTimelineParameters:(NSDictionary *)parameter WithBlock:(void (^)())block{
     
     
+    
+    
     [[ApIClient shareClient]GET:@"/2/statuses/public_timeline.json" parameters:parameter success:^(NSURLSessionDataTask *task, id responseObject) {
         //请求成功 200
         //NSLog(@"%@",responseObject);
@@ -56,6 +58,8 @@
 
 
 +(void)statusUpdateParameters:(NSDictionary *)parameter WithBlock:(void (^)(Status *))block{
+    
+    
     
     [[ApIClient shareClient]POST:@"/2/statuses/update.json" parameters:parameter success:^(NSURLSessionDataTask *task, id responseObject) {
         NSDictionary *statusDic =responseObject;

@@ -14,8 +14,10 @@
     //UINavigationController *navVC;
 
     NSMutableArray *list;
-    
-}
 
+    BOOL _reloading;
+}
+-(void)reloadData;
+-(void)doneLoading;
 
 @end

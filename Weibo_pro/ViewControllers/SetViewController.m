@@ -7,6 +7,7 @@
 //
 
 #import "SetViewController.h"
+#import "WeiboCell.h"
 
 @interface SetViewController ()
 
@@ -28,7 +29,14 @@
     [super viewDidLoad];
     
     self.title =@"Set";
+    
+    
 	// Do any additional setup after loading the view.
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+
 }
 
 - (void)didReceiveMemoryWarning

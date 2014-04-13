@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C4FBF2F8-E472-4862-963A-AAB3492ECCFE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Weibo_pro</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2F1F0A05-D67C-4F1E-8795-22EEB4A18BE3</key>
+		<string>https://github.com/LiLejia/MBProgressHUD.git</string>
+		<key>4B679CDE-430E-4DB9-8397-E4A54AD7C2DC</key>
+		<string>https://github.com/zzlmilk/peixunProject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Weibo_pro.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2F1F0A05-D67C-4F1E-8795-22EEB4A18BE3</key>
+		<string>../../Weibo_pro/MBProgressHUD</string>
+		<key>4B679CDE-430E-4DB9-8397-E4A54AD7C2DC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zzlmilk/peixunProject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4B679CDE-430E-4DB9-8397-E4A54AD7C2DC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2F1F0A05-D67C-4F1E-8795-22EEB4A18BE3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MBProgressHUD</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4B679CDE-430E-4DB9-8397-E4A54AD7C2DC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Weibo_pro</string>
+		</dict>
+	</array>
+</dict>
+</plist>

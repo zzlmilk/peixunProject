@@ -13,9 +13,16 @@
 #import "Status.h"
 #import "MBProgressHUD.h"
 
+#import "EGORefreshTableHeaderView.h"
 
-@interface HomeViewController ()
 
+
+
+@interface HomeViewController ()<EGORefreshTableHeaderDelegate>
+{
+    EGORefreshTableHeaderView *view;
+    UITableView *tableView;
+}
 @end
 
 @implementation HomeViewController
@@ -52,44 +59,58 @@
     
     
     
+    
     self.view.backgroundColor = [UIColor magentaColor];
 	// Do any additional setup after loading the view.
     
     self.title = @"Home";
     
     
-    UITableView *tableView = [[UITableView alloc]init];
+    tableView = [[UITableView alloc]init];
     tableView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     [self.view addSubview:tableView];
+    
+    
+    //下拉刷新
+    view =[[EGORefreshTableHeaderView alloc]initWithFrame:CGRectMake(0, -100, self.view.bounds.size.width, 100)];
+    [tableView addSubview:view];
+    view.delegate = self;
+    
+    //  update the last update date
+    [view refreshLastUpdatedDate];
+    
     
     tableView.delegate = self;
     tableView.dataSource =self;
     
     tableView.scrollEnabled = YES;
     
-//    [User getWeiboWihtBlock:^(NSArray *list) {
-//        userList =[NSMutableArray arrayWithArray:list];
-//        [tableView reloadData];
+    
+//    // 发微博
+//    NSMutableDictionary *updateDic =[[NSMutableDictionary alloc]init];
+//    [updateDic setObject:@"2.00CRgIDC7EG4JE58ef8087bdlMIUVD" forKey:@"access_token"];
+//    [updateDic setObject:@"text weibo" forKey:@"status"];
+//    
+//    [Status statusUpdateParameters:updateDic WithBlock:^(Status *s){
+//        NSLog(@"%@",s.text);
 //    }];
+//
+    [self getData];
 
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     
-    /*
-    UIButton *button =[UIButton buttonWithType:UIButtonTypeRoundedRect];
-//    button.backgroundColor =[UIColor yellowColor];
-    button.frame = CGRectMake(100, 100, 50, 50);
-    [button setTitle:@"button" forState:UIControlStateNormal];
-    [self.view addSubview:button];
+}
+
+-(void)getData{
     
-    //为button 添加事件
-    [button addTarget:self action:@selector(buttonPress) forControlEvents:UIControlEventTouchUpInside];
-    
-    NSLog(@"viewDidLoad");
-     */
-    
+    //网络请求
     NSMutableDictionary *dic =[[NSMutableDictionary alloc]init];
     [dic setObject:@"2.00CRgIDC7EG4JE58ef8087bdlMIUVD" forKey:@"access_token"];
     [dic setObject:@"21" forKey:@"count"];
-    
+
     MBProgressHUD *progressHub = [[MBProgressHUD alloc]init];
     progressHub.mode = MBProgressHUDModeDeterminate;
     [progressHub show:YES];
@@ -100,18 +121,8 @@
         list = statusArray;
         [tableView reloadData];
     }];
-    
-    
-    // 发微博
-    NSMutableDictionary *updateDic =[[NSMutableDictionary alloc]init];
-    [updateDic setObject:@"2.00CRgIDC7EG4JE58ef8087bdlMIUVD" forKey:@"access_token"];
-    [updateDic setObject:@"text weibo" forKey:@"status"];
-    
-    [Status statusUpdateParameters:updateDic WithBlock:^(Status *s){
-        NSLog(@"%@",s.text);
-    }];
-    
 
+    
 }
 
 
@@ -122,11 +133,9 @@
 
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row ==2) {
-        return 80;
-    }
-
-    return 100;
+   Status * s = [list objectAtIndex:indexPath.row];
+   return [WeiboCell cellHeight:s] +44 ;
+    
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
@@ -150,6 +159,18 @@
     
 }
 
+-(void)reloadData{
+    
+   // [self getData];
+    [NSThread sleepForTimeInterval:3];
+    _reloading = YES;
+    //
+}
+
+-(void)doneLoading{
+    _reloading = NO;
+    [view egoRefreshScrollViewDataSourceDidFinishedLoading:tableView];
+}
 
 
 #pragma mark ---- UITableViewDelegate
@@ -157,6 +178,35 @@
     NSLog(@"%d",indexPath.row);
 }
 
+#pragma mark - UIScrllViewDelegate Methods
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+  
+    [view egoRefreshScrollViewDidScroll:scrollView];
+}
+
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    [view egoRefreshScrollViewDidEndDragging:scrollView];
+}
+
+#pragma mark EGORefreshTableHeaderDelegate 
+-(void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView *)view{
+    //请求数据
+   // [self getData];
+    
+    [self reloadData];
+    
+    [self performSelector:@selector(doneLoading) withObject:nil afterDelay:3.0];
+    
+    
+}
+
+-(BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView *)view{
+    return _reloading;
+}
+
+-(NSDate *)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView *)view{
+    return [NSDate date]; 
+}
 
 
 
