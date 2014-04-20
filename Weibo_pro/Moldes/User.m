@@ -28,6 +28,8 @@
     return self;
 }
 
+
+
 +(NSURLSessionDataTask*)getWeiboWihtBlock:(void (^)(NSArray *))block{
     NSMutableDictionary *dic =[[NSMutableDictionary alloc]init];
     [dic setObject:@"2.00CRgIDC7EG4JE58ef8087bdlMIUVD" forKey:@"access_token"];
@@ -61,7 +63,7 @@
     return [[ApIClient shareClient]GET:@"/2/users/show.json" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
         
         User * u = [[User alloc]initWithDic:responseObject];
-        block(u);
+        block(u);   
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error);
     }];
